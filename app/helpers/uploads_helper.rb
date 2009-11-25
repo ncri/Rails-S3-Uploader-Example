@@ -57,7 +57,7 @@ module UploadsHelper
      * Uploader instance
      */
     var up = new FancyUpload3.Attach('uploader_file_list', '#upload_link', {
-      path: 'http://your_app_domain/javascripts/fancyupload/source/Swiff.Uploader.swf',
+      path: 'http://#{request.host_with_port}/javascripts/fancyupload/source/Swiff.Uploader.swf',
       url: 'https://#{bucket}.s3.amazonaws.com/',
       fieldName: 'file',
       data: $('upload-form').toQueryString(),
