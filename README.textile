@@ -2,11 +2,9 @@
 
 p. *Steps to make the example work:*
 
-- Add your s3 bucket and keys to config/amazon_s3.yml
-- Enter the correct path in helpers/uploads_helper.rb
+- Make sure you have the HAML gem installed
 
-bc. var up = new FancyUpload3.Attach('uploader_file_list', '#upload_link', { 
-   path: 'http://*yourdomain*/javascripts/fancyupload/source/Swiff.Uploader.swf'
+- Add your s3 bucket and keys to config/amazon_s3.yml
 
 - Enter the correct path for the progress bar image in javascripts/fancyupload/source/FancyUpload3.Attach.js 
 
