@@ -7,8 +7,8 @@ h2. Steps to make the example work:
 * Add your s3 bucket and keys to config/amazon_s3.yml
 * Enter the correct path in helpers/uploads_helper.rb
 
-.pre var up = new FancyUpload3.Attach('uploader_file_list', '#upload_link', { 
-.pre   path: 'http://*yourdomain*/javascripts/fancyupload/source/Swiff.Uploader.swf'@
+pre. var up = new FancyUpload3.Attach('uploader_file_list', '#upload_link', { 
+pre.   path: 'http://*yourdomain*/javascripts/fancyupload/source/Swiff.Uploader.swf'@
 
 * Enter the correct path for the progress bar image in javascripts/fancyupload/source/FancyUpload3.Attach.js 
 
@@ -16,17 +16,17 @@ h2. Steps to make the example work:
 
 * Make sure a public readable crossdomain.xml exists in the s3 bucket you specified in config/amazon_s3.yml, with the following content (you can also limit access to your domain to be more secure):
 
-.pre<?xml version="1.0"?>
+pre.<?xml version="1.0"?>
 
-.pre<!DOCTYPE cross-domain-policy SYSTEM
+pre.<!DOCTYPE cross-domain-policy SYSTEM
 
-.pre"http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+pre."http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
 
-.pre<cross-domain-policy>
+pre.<cross-domain-policy>
 
-.pre  <allow-access-from domain="*" secure="false" />
+pre.  <allow-access-from domain="*" secure="false" />
 
-.pre</cross-domain-policy>
+pre.</cross-domain-policy>
 
 * Also make sure a folder named 'test' exists in that bucket. Files will be uploaded to that folder.
 
