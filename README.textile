@@ -3,7 +3,7 @@ h2. Blog Post
 "http://www.railstoolkit.com/posts/uploading-files-directly-to-amazon-s3-using-fancyupload":http://www.railstoolkit.com/posts/uploading-files-directly-to-amazon-s3-using-fancyupload
 
 h2. Steps to make the example work
-
+pre. 
 * Add your s3 bucket and keys to config/amazon_s3.yml
 * Enter the correct path in helpers/uploads_helper.rb
 
