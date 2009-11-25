@@ -1,0 +1,4 @@
+class UploadsController < ApplicationController
+
+
+end

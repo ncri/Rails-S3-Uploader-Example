@@ -1,0 +1,247 @@
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-25 09:33:03) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+/!\ FAILSAFE /!\  Wed Nov 25 09:33:35 +0100 2009
+  Status: 500 Internal Server Error
+  undefined method `except' for "uploads/new":String
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/builder.rb:58:in `divide_route_options'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/builder.rb:166:in `build'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:309:in `add_route'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:317:in `add_named_route'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:33:in `named_route'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:29:in `root'
+    /Users/nico/Rails/s3_uploader_example/config/routes.rb:3
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:226:in `draw'
+    /Users/nico/Rails/s3_uploader_example/config/routes.rb:1
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `each'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:266:in `load!'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:281:in `reload'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:59:in `reload_application'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:28:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rails-2.3.3/lib/commands/server.rb:111
+    /Users/nico/.rvm/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/nico/.rvm/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+    /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-25 09:33:38) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-25 09:33:39) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:35:05) [GET]
+Rendering uploads/new
+
+ActionView::TemplateError (undefined method `javascript' for #<ActionView::Base:0x101193488>) on line #1 of app/views/uploads/new.erb:
+1: <%- javascript( ) %>
+2: 
+3: <% %>
+
+    app/views/uploads/new.erb:1
+
+Rendered rescues/_trace (52.2ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:35:24) [GET]
+
+ActionController::UnknownAction (No action responded to new. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:35:26) [GET]
+
+ActionController::UnknownAction (No action responded to new. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:35:43) [GET]
+
+ActionView::MissingTemplate (Missing template uploads/new.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:36:39) [GET]
+
+ActionController::UnknownAction (No action responded to new. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:37:03) [GET]
+Rendering uploads/new
+Completed in 134ms (View: 132, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:38:27) [GET]
+Rendering uploads/new
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-25 09:38:48) [GET]
+
+ActionController::RoutingError (No route matches "/none" with {:method=>:get}):
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-25 09:38:48) [GET]
+
+ActionController::RoutingError (No route matches "/none" with {:method=>:get}):
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:41:25) [GET]
+Rendering uploads/new
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-25 09:41:29) [GET]
+
+ActionController::RoutingError (No route matches "/none" with {:method=>:get}):
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-25 09:41:30) [GET]
+
+ActionController::RoutingError (No route matches "/none" with {:method=>:get}):
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:42:31) [GET]
+Rendering uploads/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:42:50) [GET]
+Rendering uploads/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:49:46) [GET]
+Rendering uploads/new
+Completed in 55ms (View: 52, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:51:31) [GET]
+Rendering uploads/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:52:03) [GET]
+Rendering uploads/new
+Completed in 51ms (View: 49, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:55:46) [GET]
+Rendering uploads/new
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:57:46) [GET]
+Rendering uploads/new
+Completed in 57ms (View: 54, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:59:10) [GET]
+Rendering uploads/new
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 10:00:58) [GET]
+Rendering uploads/new
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
