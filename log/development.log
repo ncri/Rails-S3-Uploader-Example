@@ -270,3 +270,13 @@ Completed in 42ms (View: 40, DB: 0) | 200 OK [http://localhost/]
 Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 13:02:45) [GET]
 Rendering uploads/new
 Completed in 54ms (View: 52, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 13:14:13) [GET]
+Rendering uploads/new
+Completed in 56ms (View: 53, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 13:14:38) [GET]
+Rendering uploads/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
