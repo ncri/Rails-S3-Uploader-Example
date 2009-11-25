@@ -1,16 +1,16 @@
-Blog Post: "http://www.railstoolkit.com/posts/uploading-files-directly-to-amazon-s3-using-fancyupload":http://www.railstoolkit.com/posts/uploading-files-directly-to-amazon-s3-using-fancyupload
+*Blog Post:* "http://www.railstoolkit.com/posts/uploading-files-directly-to-amazon-s3-using-fancyupload":http://www.railstoolkit.com/posts/uploading-files-directly-to-amazon-s3-using-fancyupload
 
-p. *Steps to make the example work*
+p. *Steps to make the example work:*
 
 - Add your s3 bucket and keys to config/amazon_s3.yml
 - Enter the correct path in helpers/uploads_helper.rb
 
-bc. var up = new FancyUpload3.Attach('uploader_file_list', '#upload_link', { 
+p. var up = new FancyUpload3.Attach('uploader_file_list', '#upload_link', { 
    path: 'http://*yourdomain*/javascripts/fancyupload/source/Swiff.Uploader.swf'@
 
 - Enter the correct path for the progress bar image in javascripts/fancyupload/source/FancyUpload3.Attach.js 
 
-bc. var progress = new Element('img', {'class': 'file-progress', src: 'http://*yourdomain*/javascripts/fancyupload/assets/progress-bar/bar.gif'}).inject(this.ui.size, 'after');@
+p. var progress = new Element('img', {'class': 'file-progress', src: 'http://*yourdomain*/javascripts/fancyupload/assets/progress-bar/bar.gif'}).inject(this.ui.size, 'after');@
 
 - Make sure a public readable crossdomain.xml exists in the s3 bucket you specified in config/amazon_s3.yml, with the following content (you can also limit access to your domain to be more secure):
 
