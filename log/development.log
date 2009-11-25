@@ -245,3 +245,28 @@ Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
 Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 10:00:58) [GET]
 Rendering uploads/new
 Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 12:56:43) [GET]
+Rendering uploads/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 12:56:44) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 12:58:22) [GET]
+Rendering uploads/new
+Completed in 145ms (View: 143, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 13:01:48) [GET]
+Rendering uploads/new
+Completed in 42ms (View: 40, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 13:02:45) [GET]
+Rendering uploads/new
+Completed in 54ms (View: 52, DB: 0) | 200 OK [http://localhost/]
