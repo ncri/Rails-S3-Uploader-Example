@@ -9,11 +9,11 @@ Steps to make the example work:
      * Uploader instance
      */
     var up = new FancyUpload3.Attach('uploader_file_list', '#upload_link', {
-    path: 'http://yourdomain/javascripts/fancyupload/source/Swiff.Uploader.swf'
+    path: 'http://*yourdomain*/javascripts/fancyupload/source/Swiff.Uploader.swf'
 
 * Enter the correct path for the progress bar image in javascripts/fancyupload/source/FancyUpload3.Attach.js 
 
-    var progress = new Element('img', {'class': 'file-progress', src: 'http://yourdomain/javascripts/fancyupload/assets/progress-bar/bar.gif'}).inject(this.ui.size, 'after');
+    var progress = new Element('img', {'class': 'file-progress', src: 'http://*yourdomain*/javascripts/fancyupload/assets/progress-bar/bar.gif'}).inject(this.ui.size, 'after');
 
 * Make sure a public readable crossdomain.xml exists in the s3 bucket you specified in config/amazon_s3.yml, with the following content (you can also limit access to your domain to be more secure):
 
