@@ -1,13 +1,10 @@
 Blog post to this example: http://www.railstoolkit.com/posts/uploading-files-directly-to-amazon-s3-using-fancyupload
 
-Steps to make the example work:
+h3. Steps to make the example work:
 
 * Add your s3 bucket and keys to config/amazon_s3.yml
 * Enter the correct path in helpers/uploads_helper.rb
 
-    /**
-     * Uploader instance
-     */
     var up = new FancyUpload3.Attach('uploader_file_list', '#upload_link', {
     path: 'http://*yourdomain*/javascripts/fancyupload/source/Swiff.Uploader.swf'
 
@@ -17,7 +14,7 @@ Steps to make the example work:
 
 * Make sure a public readable crossdomain.xml exists in the s3 bucket you specified in config/amazon_s3.yml, with the following content (you can also limit access to your domain to be more secure):
 
-<?xml version="1.0"?>
+pre. <?xml version="1.0"?>
 
 <!DOCTYPE cross-domain-policy SYSTEM
 
