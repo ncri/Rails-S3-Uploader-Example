@@ -17,3 +17,6 @@ bc. <?xml version="1.0"?>
 
 - Also make sure a folder named 'test' exists in that bucket. Files will be uploaded to that folder.
 
+p. *Known Issues:* 
+
+* Doesn't work in IE8 on Windows 7 yet - just like the original Fancy Upload Attach a File example. Not sure about other IE/Win combinations. 
