@@ -19,4 +19,4 @@ bc. <?xml version="1.0"?>
 
 p. *Known Issues:* 
 
-* Doesn't work in IE8 on Windows 7 yet - just like the original Fancy Upload Attach a File example. Not sure about other IE/Win combinations. 
+- Doesn't work with IE8 on Windows 7 yet - just like the original Fancy Upload Attach a File example. Not sure about other IE/Win combinations. 
