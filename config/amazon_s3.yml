@@ -1,8 +1,4 @@
-bucket_name: s3-uploader-example
-access_key_id: AKIAJFKGYRCEIVP6FE5A
-secret_access_key: i5S6DRU+SrfsI8l3MspqvH5XpM+tEDuBNZ52rH2w
-
-#bucket_name: bucket_name
-#access_key_id: key
-#secret_access_key: secret_key
+bucket_name: bucket_name
+access_key_id: key
+secret_access_key: secret_key
 
