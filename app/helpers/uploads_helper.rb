@@ -62,7 +62,7 @@ module UploadsHelper
       fieldName: 'file',
       data: $('upload-form').toQueryString(),
 
-      fileSizeMax: 2000 * 1024 * 1024,
+      fileSizeMax: 5000 * 1024 * 1024,
 
       //verbose: true,
 
