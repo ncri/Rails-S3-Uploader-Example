@@ -50,7 +50,6 @@ FancyUpload3.S3Uploader = new Class({
 			});
 
 		this.parent(list, selects, options);
-                this.options.onUploadComplete = options.onUploadComplete;
 	},
 
 	onBeforeStart: function() {
@@ -124,10 +123,7 @@ FancyUpload3.S3Uploader = new Class({
                           method: this.options.onUploadCompleteMethod,
                           url: this.options.onUploadCompleteURL,
                           data: requestData });
-            if (this.options.onUploadComplete)
-              this.options.onUploadComplete(file.name, this.options.onUploadCompleteMethod, this.options.onUploadCompleteURL, requestData);
-            else
-              request.send();
+            request.send();
         }
       },
 
