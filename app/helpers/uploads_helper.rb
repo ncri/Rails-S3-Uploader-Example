@@ -1,18 +1,24 @@
 module UploadsHelper
 
-  def s3_uploader(options = {})
-    filename = "#{RAILS_ROOT}/config/amazon_s3.yml"
-    config = YAML.load_file(filename)
+  require 'base64'
+  require 'openssl'
+  require 'digest/sha1'
 
-    bucket            = config['bucket_name']
-    access_key_id     = config['access_key_id']
-    secret_access_key = config['secret_access_key']
+  def s3_uploader(options = {})
+    s3_config_filename = "#{RAILS_ROOT}/config/amazon_s3.yml"
+    config = YAML.load_file(s3_config_filename)
+
+    bucket            = config[RAILS_ENV]['bucket_name']
+    access_key_id     = config[RAILS_ENV]['access_key_id']
+    secret_access_key = config[RAILS_ENV]['secret_access_key']
 
     key             = options[:key] || ''
-    content_type    = options[:content_type] || ''
+    content_type    = options[:content_type] || '' # Defaults to binary/octet-stream if blank
     acl             = options[:acl] || 'public-read'
     expiration_date = (options[:expiration_date] || 10.hours).from_now.utc.strftime('%Y-%m-%dT%H:%M:%S.000Z')
     max_filesize    = options[:max_filesize] || 2.megabyte
+
+    id = options[:id] ? "_#{options[:id]}" : ''
 
     policy = Base64.encode64(
       "{'expiration': '#{expiration_date}',
@@ -33,88 +39,38 @@ module UploadsHelper
                     secret_access_key, policy)).gsub("\n","")
 
     out = ""
-    out << %(
-      <form action="https://#{bucket}.s3.amazonaws.com/" method="post" enctype="multipart/form-data" id="upload-form">
-      <input type="hidden" name="key" value="#{key}/${filename}">
-      <input type="hidden" name="AWSAccessKeyId" value="#{access_key_id}">
-      <input type="hidden" name="acl" value="#{acl}">
-      <input type="hidden" name="policy" value="#{policy}">
-      <input type="hidden" name="signature" value="#{signature}">
-      <input type="hidden" name="success_action_status" value="201">
-      <input type="hidden" name="Content-Type" value="#{content_type}">
-      </form>
-    )
 
     out << "\n"
-    out << link_to('Upload File(s)', '#',:id=> 'upload_link')
+    out << link_to("<strong>" + (options[:text] || 'Upload File(s)') + '</strong>', '#', :id => "upload_link#{id}")
     out << "\n"
-    out << content_tag(:ul, '', :id => 'uploader_file_list')
+    out << content_tag(:ul, '', :id => "uploader_file_list#{id}", :class => 'uploader_file_list' )
     out << "\n"
 
     out << javascript_tag("window.addEvent('domready', function() {
 
-    /**
-     * Uploader instance
-     */
-    var up = new FancyUpload3.Attach('uploader_file_list', '#upload_link', {
-      path: 'http://#{request.host_with_port}/javascripts/fancyupload/source/Swiff.Uploader.swf',
-      url: 'https://#{bucket}.s3.amazonaws.com/',
-      fieldName: 'file',
-      data: $('upload-form').toQueryString(),
+      /**
+       * Uploader instance
+       */
 
-      fileSizeMax: 5000 * 1024 * 1024,
-
-      //verbose: true,
-
-      onSelectFail: function(files) {
-        files.each(function(file) {
-          new Element('li', {
-            'class': 'file-invalid',
-            events: {
-              click: function() {
-                this.destroy();
-              }
-            }
-          }).adopt(
-            new Element('span', {html: file.validationErrorMessage || file.validationError})
-          ).inject(this.list, 'bottom');
-        }, this);
-      },
-
-      onFileComplete: function(file) {
-        if (file.response.code == 201 || file.response.code == 0){
-          file.ui.element.highlight('#e6efc2');
-          file.ui.element.children[2].setStyle('display','none');
-          file.ui.element.children[3].setStyle('display','none');
-        }
-      },
-
-      onFileError: function(file) {
-        if (file.response.code != 201){
-          file.ui.cancel.set('html', 'Retry').removeEvents().addEvent('click', function() {
-            file.requeue();
-            return false;
-          });
-
-          new Element('span', {
-            html: file.errorMessage,
-            'class': 'file-error'
-          }).inject(file.ui.cancel, 'after'); }
-      },
-
-      onFileRequeue: function(file) {
-        file.ui.element.getElement('.file-error').destroy();
-
-        file.ui.cancel.set('html', 'Cancel').removeEvents().addEvent('click', function() {
-          file.remove();
-          return false;
-        });
-
-        this.start();
-      }
-
-      });
-
+      var up#{ id } = new FancyUpload3.S3Uploader( 'uploader_file_list#{id}', '#upload_link#{id}', {
+                                                   host: '#{request.host_with_port}',
+                                                   bucket: '#{bucket}',
+                                                   typeFilter: #{options[:type_filter] ? "{" + options[:type_filter] + "}" : 'null' },
+                                                   fileSizeMax: #{options[:max_filesize]},
+                                                   access_key_id: '#{access_key_id}',
+                                                   policy: '#{policy}' ,
+                                                   signature: '#{signature}',
+                                                   key: '#{key}',
+                                                   id: '#{id}',
+                                                   acl: '#{acl}',
+                                                   https: #{options[:https] ? 'true' : 'false'},
+                                                   validateFileNamesURL: '#{options[:validate_filenames_url]}',
+                                                   onUploadComplete: #{options[:on_upload_complete] || 'null'},
+                                                   onUploadCompleteURL: '#{options[:on_complete]}',
+                                                   onUploadCompleteMethod: '#{options[:on_complete_method]}',
+                                                   formAuthenticityToken: '#{form_authenticity_token}',
+                                                   verbose: #{options[:verbose] ? 'true' : 'false' }
+      })
     });")
 
   end

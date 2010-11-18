@@ -1,6 +1,11 @@
-bucket_name: s3-uploader-example
-access_key_id: AKIAIL4RK3EDA3URVBGA
-secret_access_key: mhfNvHNSPxshtmz4HrLGSOwLGZXxjgljAAecQmcy
+development:
+  bucket_name: s3-uploader-example
+  access_key_id: AKIAIL4RK3EDA3URVBGA
+  secret_access_key: mhfNvHNSPxshtmz4HrLGSOwLGZXxjgljAAecQmcy
+production:
+  bucket_name: s3-uploader-example
+  access_key_id: AKIAIL4RK3EDA3URVBGA
+  secret_access_key: mhfNvHNSPxshtmz4HrLGSOwLGZXxjgljAAecQmcy
 
 #bucket_name: bucket_name
 #access_key_id: key
