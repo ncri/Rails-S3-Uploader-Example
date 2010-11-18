@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
     #session[:user_id] = User.find_by_email('nico.ritsche@gmail.com').id
     return unless ENV['RAILS_ENV'] == 'production'
     authenticate_or_request_with_http_basic do |id, password|
-      id == 'upload' && password == 'n0wupl0ad2oo9'
+      id == 'upload2010' && password == '2oioupl0ader'
     end
   end
 

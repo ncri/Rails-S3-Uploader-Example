@@ -7,12 +7,13 @@
 
     = stylesheet_link_tag "styles"
 
-    = javascript_include_tag( 'http://ajax.googleapis.com/ajax/libs/mootools/1.2.2/mootools.js', |
-                              'fancyupload/source/Fx.ProgressBar', |
-                              'fancyupload/source/Swiff.Uploader', |
-                              'fancyupload/source/FancyUpload3.Attach' ) |
+    = javascript_include_tag( 'mootools.js', 
+                              'fancyupload/source/Fx.ProgressBar',
+                              'fancyupload/source/Swiff.Uploader', 
+                              'fancyupload/source/FancyUpload3.Attach', 
+                              'fancyupload/source/FancyUpload3.S3Uploader' )
 
     %meta{ 'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
 
   %body
-    = s3_uploader :key => "test", :max_filesize => 5.megabytes
+    = s3_uploader :key => "test", :max_filesize => 5.megabytes, :verbose => true
