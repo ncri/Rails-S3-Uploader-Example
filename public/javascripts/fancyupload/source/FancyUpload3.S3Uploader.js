@@ -54,7 +54,7 @@ FancyUpload3.S3Uploader = new Class({
 	},
 
 	onBeforeStart: function() {
-          if (this.options.validateFileNamesURL){
+          if (this.options.validateFileNamesURL && this.options.validateFileNamesURL != ''){
             var file_names = [];
             this.fileList.each(function(file, index) {
               if (!file.completeDate){
@@ -68,11 +68,14 @@ FancyUpload3.S3Uploader = new Class({
                           data: { 'authenticity_token' : this.options.formAuthenticityToken, 'file_names' : file_names.join(',') } }).send();
 
             var response = JSON.parse(req.response.text);
-            var data = { AWSAccessKeyId: this.options.access_key_id,
-                         acl: this.options.acl,
-                         policy: this.options.policy,
-                         signature: this.options.signature,
-                         success_action_status: '201' };
+          }
+
+          var data = { AWSAccessKeyId: this.options.access_key_id,
+                       acl: this.options.acl,
+                       policy: this.options.policy,
+                       signature: this.options.signature,
+                       success_action_status: '201' };
+          if (this.options.validateFileNamesURL && this.options.validateFileNamesURL != ''){
             for (var j=response.length-1, i=this.fileList.length-1; i > this.fileList.length - 1 - response.length; i--, j--){
               if (response[j] != 'file_ok'){
                 data.key = this.options.key + '/_' + response[j] + '_${filename}';
@@ -83,6 +86,13 @@ FancyUpload3.S3Uploader = new Class({
               this.fileList[i].setOptions({ data: data });
             }
           }
+          else{
+            for (i=0; i < this.fileList.length; i++){
+              data.key = this.options.key + '/${filename}';
+              this.fileList[i].setOptions({ data: data });
+            }
+          }
+
         },
 
       onSelectFail: function(files) {

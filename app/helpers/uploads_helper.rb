@@ -12,24 +12,24 @@ module UploadsHelper
     access_key_id     = config[RAILS_ENV]['access_key_id']
     secret_access_key = config[RAILS_ENV]['secret_access_key']
 
-    key             = options[:key] || ''
-    content_type    = options[:content_type] || '' # Defaults to binary/octet-stream if blank
-    acl             = options[:acl] || 'public-read'
-    expiration_date = (options[:expiration_date] || 10.hours).from_now.utc.strftime('%Y-%m-%dT%H:%M:%S.000Z')
-    max_filesize    = options[:max_filesize] || 2.megabyte
+    options[:key] ||= ''
+    options[:content_type] ||= '' # Defaults to binary/octet-stream if blank
+    options[:acl] ||= 'public-read'
+    options[:expiration_date] ||= 10.hours.from_now.utc.strftime('%Y-%m-%dT%H:%M:%S.000Z')
+    options[:max_filesize] ||= 2.megabyte
 
     id = options[:id] ? "_#{options[:id]}" : ''
 
     policy = Base64.encode64(
-      "{'expiration': '#{expiration_date}',
+      "{'expiration': '#{options[:expiration_date]}',
         'conditions': [
           {'bucket': '#{bucket}'},
-          ['starts-with', '$key', '#{key}'],
-          {'acl': '#{acl}'},
+          ['starts-with', '$key', '#{options[:key]}'],
+          {'acl': '#{options[:acl]}'},
           {'success_action_status': '201'},
-          ['content-length-range', 0, #{max_filesize}],
+          ['content-length-range', 0, #{options[:max_filesize]}],
           ['starts-with', '$Filename', ''],
-          ['starts-with', '#{content_type}', '']
+          ['starts-with', '#{options[:content_type]}', '']
         ]
       }").gsub(/\n|\r/, '')
 
@@ -60,9 +60,9 @@ module UploadsHelper
                                                    access_key_id: '#{access_key_id}',
                                                    policy: '#{policy}' ,
                                                    signature: '#{signature}',
-                                                   key: '#{key}',
+                                                   key: '#{options[:key]}',
                                                    id: '#{id}',
-                                                   acl: '#{acl}',
+                                                   acl: '#{options[:acl]}',
                                                    https: #{options[:https] ? 'true' : 'false'},
                                                    validateFileNamesURL: '#{options[:validate_filenames_url]}',
                                                    onUploadComplete: #{options[:on_upload_complete] || 'null'},
