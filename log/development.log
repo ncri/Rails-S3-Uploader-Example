@@ -633,3 +633,464 @@ Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
 Processing UploadsController#new (for 127.0.0.1 at 2010-11-18 20:05:12) [GET]
 Rendering uploads/new
 Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-11-18 20:22:35) [GET]
+Rendering uploads/new
+Completed in 49ms (View: 48, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-11-18 20:23:48) [GET]
+Rendering uploads/new
+Completed in 47ms (View: 45, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-11-18 20:33:14) [GET]
+Rendering uploads/new
+Completed in 44ms (View: 42, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:33:25) [POST]
+  Parameters: {"current_controller"=>"home", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_action"=>"index", "_"=>""}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-11-18 20:33:33) [GET]
+Rendering uploads/new
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:33:41) [POST]
+  Parameters: {"noCache"=>"1290105221035", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_controller"=>"media", "current_action"=>"index"}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-11-18 20:38:14) [GET]
+Rendering uploads/new
+Completed in 45ms (View: 43, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:38:25) [POST]
+  Parameters: {"current_controller"=>"home", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_action"=>"index", "_"=>""}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:38:42) [POST]
+  Parameters: {"noCache"=>"1290105522364", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_controller"=>"media", "current_action"=>"index"}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:38:55) [POST]
+  Parameters: {"current_controller"=>"home", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_action"=>"index", "_"=>""}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:39:12) [POST]
+  Parameters: {"noCache"=>"1290105552365", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_controller"=>"media", "current_action"=>"index"}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:39:25) [POST]
+  Parameters: {"current_controller"=>"home", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_action"=>"index", "_"=>""}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-11-18 20:39:33) [GET]
+Rendering uploads/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:39:42) [POST]
+  Parameters: {"noCache"=>"1290105582365", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_controller"=>"media", "current_action"=>"index"}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:39:55) [POST]
+  Parameters: {"current_controller"=>"home", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_action"=>"index", "_"=>""}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:40:12) [POST]
+  Parameters: {"noCache"=>"1290105612366", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_controller"=>"media", "current_action"=>"index"}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:40:25) [POST]
+  Parameters: {"current_controller"=>"home", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_action"=>"index", "_"=>""}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:40:42) [POST]
+  Parameters: {"noCache"=>"1290105642366", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_controller"=>"media", "current_action"=>"index"}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:40:55) [POST]
+  Parameters: {"current_controller"=>"home", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_action"=>"index", "_"=>""}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:41:12) [POST]
+  Parameters: {"noCache"=>"1290105672366", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_controller"=>"media", "current_action"=>"index"}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:41:25) [POST]
+  Parameters: {"current_controller"=>"home", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_action"=>"index", "_"=>""}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:41:42) [POST]
+  Parameters: {"noCache"=>"1290105702367", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_controller"=>"media", "current_action"=>"index"}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:41:55) [POST]
+  Parameters: {"current_controller"=>"home", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_action"=>"index", "_"=>""}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:42:12) [POST]
+  Parameters: {"noCache"=>"1290105732367", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_controller"=>"media", "current_action"=>"index"}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:42:25) [POST]
+  Parameters: {"current_controller"=>"home", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_action"=>"index", "_"=>""}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:42:42) [POST]
+  Parameters: {"noCache"=>"1290105762367", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_controller"=>"media", "current_action"=>"index"}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:42:55) [POST]
+  Parameters: {"current_controller"=>"home", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_action"=>"index", "_"=>""}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:43:12) [POST]
+  Parameters: {"noCache"=>"1290105792368", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_controller"=>"media", "current_action"=>"index"}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:43:25) [POST]
+  Parameters: {"current_controller"=>"home", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_action"=>"index", "_"=>""}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-11-18 20:43:29) [GET]
+Rendering uploads/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 20:43:42) [POST]
+  Parameters: {"noCache"=>"1290105822369", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_controller"=>"media", "current_action"=>"index"}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-11-18 21:17:00) [GET]
+Rendering uploads/new
+Completed in 76ms (View: 74, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 21:17:08) [POST]
+  Parameters: {"noCache"=>"1290107828683", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_controller"=>"media", "current_action"=>"index"}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-11-18 21:17:11) [POST]
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendered rescues/_trace (63.1ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 21:17:25) [POST]
+  Parameters: {"current_controller"=>"home", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_action"=>"index", "_"=>""}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 21:17:38) [POST]
+  Parameters: {"noCache"=>"1290107858684", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_controller"=>"media", "current_action"=>"index"}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 21:17:55) [POST]
+  Parameters: {"current_controller"=>"home", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_action"=>"index", "_"=>""}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 21:18:08) [POST]
+  Parameters: {"noCache"=>"1290107888684", "authenticity_token"=>"fnZ5dOrvHOX3Nmc6tawuqD7NC3Vs3pAvzZ5g8fe++ts=", "current_controller"=>"media", "current_action"=>"index"}
+
+ActionController::RoutingError (No route matches "/periodic_page_updates/update_page" with {:method=>:post}):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
