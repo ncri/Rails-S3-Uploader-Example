@@ -1,10 +1,6 @@
 module UploadsHelper
 
-  require 'base64'
-  require 'openssl'
-  require 'digest/sha1'
 
-  
   #  Creates an upload link to a Fancy Upload S3 File Uploader
   #
   #  required parameters:

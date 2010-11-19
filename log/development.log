@@ -4464,3 +4464,38 @@ ActionController::RoutingError (No route matches "/periodic_page_updates/update_
   /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
 
 Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-11-19 16:56:41) [GET]
+Rendering uploads/new
+Completed in 286ms (View: 283, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-11-19 16:57:07) [POST]
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendered rescues/_trace (63.8ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-11-19 16:58:03) [POST]
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  haml (3.0.23) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/lib/ruby-debug.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/gems/ruby-debug-ide-0.4.7/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby-1.8.7-p302/bin/rdebug-ide:19
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (unprocessable_entity)
