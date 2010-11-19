@@ -1,6 +1,5 @@
 module UploadsHelper
 
-
   #  Creates an upload link to a Fancy Upload S3 File Uploader
   #
   #  required parameters:
