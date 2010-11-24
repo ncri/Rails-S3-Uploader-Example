@@ -1,4 +1,4 @@
-*Blog Post:* "http://www.railstoolkit.com/posts/uploading-files-directly-to-amazon-s3-using-fancyupload":http://www.railstoolkit.com/posts/uploading-files-directly-to-amazon-s3-using-fancyupload
+*Blog Post:* "http://www.railstoolkit.com/posts/rails-amazon-s3-uploader-with-progress-bar-2010-update":http://www.railstoolkit.com/posts/rails-amazon-s3-uploader-with-progress-bar-2010-update
 
 p. *Steps to make the example work:*
 
