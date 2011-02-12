@@ -31,7 +31,7 @@ module UploadsHelper
   #                            The parameter file_names passed to the function contains the selected file names (comma separated).
   #                            The function needs to return a uniq prefix for each filename that exists on the server and 'file_ok'
   #                            for filenames that are not existing on the server. Example: ['_1', 'file_ok', '_3', ...].
-  #                            (I do prefer postfixes to prefixes, but I didn't manage FancyUpload to like postfixes.)
+  #                            (I do prefer postfixes to prefixes, but I didn't manage to get FancyUpload to like postfixes.)
   #                            The array needs to be returned in json format.
   #                            !!! If not specified, files on s3 with the same filename as the uploaded file are overwritten !!!
   #
