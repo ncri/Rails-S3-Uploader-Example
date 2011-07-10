@@ -117,13 +117,14 @@ FancyUpload3.S3Uploader = new Class({
           file.ui.element.children[2].setStyle('display','none');
           file.ui.element.children[3].setStyle('display','none');
 
-          if (this.options.onUploadCompleteURL)
+          if (this.options.onUploadCompleteURL) {
             var requestData = { 'upload_element_id' : file.ui.element.id, 'authenticity_token' : this.options.formAuthenticityToken, 'filename' : file.name, 'filesize' : file.size, 'filename_prefix' : file.prefix || '' };
             var request = new Request({ async: false,
                           method: this.options.onUploadCompleteMethod,
                           url: this.options.onUploadCompleteURL,
                           data: requestData });
             request.send();
+          }
         }
       },
 
