@@ -2,11 +2,13 @@
 
 p. *Steps to make the example work:*
 
-- Make sure you have the HAML gem installed
+- Make sure you have the bundler gem and install the required gems by running "bundle"
 
 - Add your s3 bucket and keys to config/amazon_s3.yml
 
 - Make sure a public readable crossdomain.xml exists in the s3 bucket you specified in config/amazon_s3.yml, with the following content (you can also limit access to your domain to be more secure):
+
+- Start the application with "bundle exec script/server"
 
 bc. <?xml version="1.0"?>
 <!DOCTYPE cross-domain-policy SYSTEM
